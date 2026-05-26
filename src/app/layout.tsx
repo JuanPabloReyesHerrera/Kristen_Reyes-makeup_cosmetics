@@ -62,7 +62,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col no-scrollbar">
         <Navbar />
         {children}
       </body>

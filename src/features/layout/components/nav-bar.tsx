@@ -26,7 +26,7 @@ import BuyBotton from "@/features/store/components/ui/buy-botton";
 export function Navbar() {
   const logoSize: number = 120;
   return (
-    <nav className="flex h-16 items-center justify-between px-4 bg-background">
+    <nav className="fixed top-0 left-0 flex h-navbar w-full items-center justify-between px-4 bg-background z-1000">
       {/* Brand */}
       <Button variant={"ghost"} className="rounded-3xl">
         <Link
