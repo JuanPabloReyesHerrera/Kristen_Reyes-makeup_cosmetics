@@ -8,7 +8,7 @@ interface UseCarouselOptions {
 }
 
 interface UseCarouselReturn {
-  scrollContainerRef: RefObject<HTMLDivElement>;
+  scrollContainerRef: RefObject<HTMLDivElement | null>;
   canScrollLeft: boolean;
   canScrollRight: boolean;
   scroll: (direction: "left" | "right") => void;
