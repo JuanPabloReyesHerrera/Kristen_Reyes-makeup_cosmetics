@@ -39,8 +39,14 @@ const dmSans = DM_Sans({
 ───────────────────────────────────────────────────────── */
 export const metadata: Metadata = {
   title: {
-    default: "LUXÉ — Makeup & Beauty",
+    default: "Kriste Reyes — Makeup & Beauty",
     template: "%s | LUXÉ",
+  },
+  icons: {
+    icon: "/favicon.ico", // Ruta relativa a la carpeta public
+    // Puedes agregar más formatos si lo deseas:
+    // shortcut: "/shortcut-icon.png",
+    // apple: "/apple-icon.png",
   },
   description:
     "Fórmulas luminosas para cada tono de piel. Descubre nuestra colección de makeup premium.",
