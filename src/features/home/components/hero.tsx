@@ -1,12 +1,13 @@
+"use client";
 export function Hero() {
   const scrollToMakeup = () => {
-    //const section = document.getElementById("kristen-makeup-cosmetics");
-    //section?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const section = document.getElementById("makeup-cosmetics");
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
     <>
-      <section className="relative h-dvh w-full overflow-hidden -[-100dvh]">
+      <section className="relative h-dvh w-full overflow-hidden">
         {/* Imagen de fondo */}
 
         {/* Overlay con gradiente para legibilidad */}
@@ -45,7 +46,7 @@ export function Hero() {
 
               {/* Descripción */}
               <p
-                className="text-base md:text-lg text-white/90 font-light leading-relaxed max-w-xl
+                className="text-base md:text-lg text-white/90 font-light leading-relaxed max-w-90
                          animate-fadeSlideUp animation-delay-500"
               >
                 Especialista certificada en makeup profesional, cosmética de
@@ -55,7 +56,7 @@ export function Hero() {
               {/* CTA Button */}
               <div className="pt-4 animate-fadeSlideUp animation-delay-700">
                 <button
-                  // onClick={scrollToMakeup}
+                  onClick={scrollToMakeup}
                   className="group relative inline-flex items-center gap-3 px-8 py-4 
                          bg-white/10 backdrop-blur-md border border-white/30
                          hover:bg-white/20 hover:border-white/50

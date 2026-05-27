@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/site.config";
 
 export default function Home() {
   return (
-    <main className="flex flex-1 w-full flex-col items-center justify-between sm:items-start">
-      <section className="bg-transparent flex flex-col w-full">
+    <main className="flex flex-1 w-full flex-col">
+      <section className="flex flex-col w-full h-fit overflow-hidden">
         <BackGroundImage
           imageSrc={"/assets/hero.jpeg"}
           alt={siteConfig.name}

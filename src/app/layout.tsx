@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/features/layout/components/nav-bar";
 import { Playfair_Display, DM_Sans } from "next/font/google";
+import { ThemeProvider } from "next-themes"; // o tu ruta de importación
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -60,11 +61,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${dmSans.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${playfair.variable} ${dmSans.variable} h-full antialiased scrollbar-none [&::-webkit-scrollbar]:hidden`}
     >
       <body className="min-h-full flex flex-col no-scrollbar">
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -40,7 +40,10 @@ export const ProductCarousel = ({
   };
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col py-8 bg-background">
+    <div
+      className="relative w-full min-h-screen flex flex-col py-8 bg-background"
+      id="makeup-cosmetics"
+    >
       {/* Header */}
       <div className="px-4 md:px-8 py-6 md:py-12 max-w-[1600px] mx-auto w-full">
         <div className="space-y-2">
