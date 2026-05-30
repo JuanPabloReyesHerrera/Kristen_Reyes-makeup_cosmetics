@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Plus } from "lucide-react";
-import { type Product } from "../core/product.type";
+import { type Product } from "../core/types";
 import { ProductCard } from "./ui/product-card";
 import { useCarousel } from "../hooks/use-carousel";
 
@@ -45,19 +45,19 @@ export const ProductCarousel = ({
       id="makeup-cosmetics"
     >
       {/* Header */}
-      <div className="px-4 md:px-8 py-6 md:py-12 max-w-[1600px] mx-auto w-full">
+      <div className="flex items-center justify-center py-6 md:py-12 max-w-400 mx-auto w-full">
         <div className="space-y-2">
           <h2 className="font-heading text-4xl md:text-6xl font-light tracking-wide text-foreground">
             Nueva Colección
           </h2>
           <p className="text-sm md:text-base font-light tracking-widest text-muted-foreground uppercase">
-            Piezas esenciales para tu guardarropa
+            Piezas esenciales para tu look
           </p>
         </div>
       </div>
 
       {/* Carousel Wrapper */}
-      <div className="flex-1 relative max-w-[1600px] mx-auto w-full py-4 md:py-8">
+      <div className="flex-1 relative max-w-400 mx-auto w-full py-4 md:py-8">
         {/* Navigation Buttons - Desktop Only */}
         {!isMobile && (
           <>
@@ -99,14 +99,14 @@ export const ProductCarousel = ({
       </div>
 
       {/* View More Button */}
-      <div className="flex justify-center px-4 md:px-8 py-8 md:py-12 max-w-[1600px] mx-auto w-full">
+      <div className="flex justify-center px-4 md:px-8 py-8 md:py-12 max-w-400 mx-auto w-full">
         <button
           onClick={handleViewMore}
           className="group flex items-center gap-3 px-6 md:px-12 py-4 md:py-5 bg-primary text-primary-foreground border-none text-sm font-normal tracking-widest transition-all duration-400 hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-xl relative overflow-hidden w-full md:w-auto justify-center"
         >
           <span className="relative z-10">VER CATÁLOGO COMPLETO</span>
           <Plus className="w-5 h-5 transition-transform group-hover:rotate-90 relative z-10" />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
+          <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
         </button>
       </div>
 

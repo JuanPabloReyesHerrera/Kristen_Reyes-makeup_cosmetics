@@ -197,3 +197,7 @@
     display: none; /* Chrome, Safari y Opera */
   }
 }
+
+@utility animate-fade-in {
+  animation: fade-in 700ms ease-in-out forwards;
+}

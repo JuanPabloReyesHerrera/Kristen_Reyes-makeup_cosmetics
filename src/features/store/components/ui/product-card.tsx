@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Product } from "../../core/product.type";
+import { Product } from "../../core/types";
 import { formatPrice } from "../../core/format-price";
 
 interface ProductCardProps {

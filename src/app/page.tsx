@@ -9,7 +9,11 @@ export default function Home() {
     <main className="flex flex-1 w-full flex-col">
       <section className="flex flex-col w-full h-fit overflow-hidden">
         <BackGroundImage
-          imageSrc={"/assets/hero.jpeg"}
+          imageSrcs={[
+            "/assets/hero.jpeg",
+            "/assets/hero-2.jpeg",
+            "/assets/hero-3.jpeg",
+          ]}
           alt={siteConfig.name}
           className="h-dvh"
         />
